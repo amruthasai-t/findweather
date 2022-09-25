@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <div class="card-container">
+        <input type="text" class="input-part" placeholder=" Enter the city...">
+        <button class="search"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+        <div class="date-container">
+            <div class="time">
+                12:30 <span class="am-pm">PM</span>
+            </div>
+        </div>
+        <div class="weather loading hidden">
+            <h2 class="city"></h2>
+            
+            <h1 class="temp"></h1>
+            <div class="description"></div>
+            <div class="humidity"></div>
+            <div class="wind">Weather </div> <img src="./icons/alternate.png" alt="Weather icon" class="wicon" width="48px" height="48px">
+        </div>
+    </div>
+    <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
